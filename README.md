@@ -14,7 +14,7 @@ https://api.sap.com/api/OP_API_BILLING_DOCUMENT_SRV_0001/overview
 sap-billing-document-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
 * sap-billing-document-sql-header-data.sql   
-
+* sap-billing-document-sql-item-data.sql
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
