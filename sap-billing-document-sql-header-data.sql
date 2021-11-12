@@ -40,6 +40,6 @@ CREATE TABLE `sap-billing-document-header-data`
     `InvoiceListStatus`       varchar(1) DEFAULT NULL,
     `BillingDocumentListType` varchar(4) DEFAULT NULL,
     `BillingDocumentListDate` date DEFAULT NULL,
-    PRIMARY KEY (`BillingDocument`),
+    PRIMARY KEY (`BillingDocument`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
