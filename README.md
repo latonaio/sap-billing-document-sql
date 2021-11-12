@@ -15,6 +15,7 @@ sap-billing-document-sql には、sqlの設定ファイルとして、以下の�
 
 * sap-billing-document-sql-header-data.sql   
 * sap-billing-document-sql-item-data.sql
+* sap-billing-document-sql-partner-data.sql
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
