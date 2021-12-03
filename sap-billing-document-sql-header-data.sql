@@ -12,7 +12,7 @@ CREATE TABLE `sap-billing-document-header-data`
     `BillingDocumentDate`     date DEFAULT NULL,
     `BillingDocumentIsCancelled` tinyint(1) DEFAULT NULL,
     `CancelledBillingDocument` varchar(10) DEFAULT NULL,
-    `IsExportDelivery`        tinyint(1) DEFAULT NULL,
+    `IsExportDelivery`        varchar(1) DEFAULT NULL,
     `TotalNetAmount`          varchar(11) DEFAULT NULL,
     `TransactionCurrency`     varchar(5) DEFAULT NULL,
     `TaxAmount`               varchar(11) DEFAULT NULL,
