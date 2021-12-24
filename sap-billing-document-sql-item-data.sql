@@ -1,7 +1,7 @@
 CREATE TABLE `sap-billing-document-item-data`
 (
-    `BillingDocument`         varchar(10) DEFAULT NULL,
-    `BillingDocumentItem`     varchar(6) DEFAULT NULL,
+    `BillingDocument`         varchar(10) NOT NULL,
+    `BillingDocumentItem`     varchar(6) NOT NULL,
     `SalesDocumentItemCategory` varchar(4) DEFAULT NULL,
     `ReturnItemProcessingType` varchar(1) DEFAULT NULL,
     `CreationDate`            date DEFAULT NULL,
