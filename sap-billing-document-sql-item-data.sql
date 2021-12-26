@@ -1,10 +1,10 @@
-CREATE TABLE `sap-billing-document-item-data`
+CREATE TABLE `sap_billing_document_item_data`
 (
     `BillingDocument`         varchar(10) NOT NULL,
     `BillingDocumentItem`     varchar(6) NOT NULL,
     `SalesDocumentItemCategory` varchar(4) DEFAULT NULL,
     `ReturnItemProcessingType` varchar(1) DEFAULT NULL,
-    `CreationDate`            date DEFAULT NULL,
+    `CreationDate`            varchar(80) DEFAULT NULL,
     `Division`                varchar(2) DEFAULT NULL,
     `Material`                varchar(40) DEFAULT NULL,
     `InternationalArticleNumber` varchar(18) DEFAULT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE `sap-billing-document-item-data`
     `NetAmount`               varchar(11) DEFAULT NULL,
     `TransactionCurrency`     varchar(5) DEFAULT NULL,
     `GrossAmount`             varchar(11) DEFAULT NULL,
-    `PricingDate`             date DEFAULT NULL,
+    `PricingDate`             varchar(80) DEFAULT NULL,
     `TaxAmount`               varchar(11) DEFAULT NULL,
     `MaterialPricingGroup`    varchar(2) DEFAULT NULL,
     `MainItemMaterialPricingGroup` varchar(2) DEFAULT NULL,
@@ -37,6 +37,6 @@ CREATE TABLE `sap-billing-document-item-data`
     `SDDocumentReason`        varchar(3) DEFAULT NULL,
     `ShippingPoint`           varchar(4) DEFAULT NULL,
     PRIMARY KEY (`BillingDocument`, `BillingDocumentItem`),
-    CONSTRAINT `BillingDocument_fk` FOREIGN KEY (`BillingDocument`) REFERENCES `sap-billing-document-header-data` (`BillingDocument`)
+    CONSTRAINT `SAPBillingDocumentItemData_fk` FOREIGN KEY (`BillingDocument`) REFERENCES `sap_billing_document_header_data` (`BillingDocument`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

@@ -1,15 +1,15 @@
-CREATE TABLE `sap-billing-document-header-data`
+CREATE TABLE `sap_billing_document_header_data`
 (
     `BillingDocument`         varchar(10) NOT NULL,
     `BillingDocumentType`     varchar(2) DEFAULT NULL,
     `SDDocumentCategory`      varchar(4) DEFAULT NULL,
     `BillingDocumentCategory` varchar(1) DEFAULT NULL,
-    `CreationDate`            date DEFAULT NULL,
-    `LastChangeDate`          date DEFAULT NULL,
+    `CreationDate`            varchar(80) DEFAULT NULL,
+    `LastChangeDate`          varchar(80) DEFAULT NULL,
     `SalesOrganization`       varchar(4) DEFAULT NULL,
     `DistributionChannel`     varchar(2) DEFAULT NULL,
     `Division`                varchar(2) DEFAULT NULL,
-    `BillingDocumentDate`     date DEFAULT NULL,
+    `BillingDocumentDate`     varchar(80) DEFAULT NULL,
     `BillingDocumentIsCancelled` tinyint(1) DEFAULT NULL,
     `CancelledBillingDocument` varchar(10) DEFAULT NULL,
     `IsExportDelivery`        varchar(1) DEFAULT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE `sap-billing-document-header-data`
     `PaymentMethod`           varchar(1) DEFAULT NULL,
     `CompanyCode`             varchar(4) DEFAULT NULL,
     `AccountingDocument`      varchar(10) DEFAULT NULL,
-    `ExchangeRateDate`        date DEFAULT NULL,
+    `ExchangeRateDate`        varchar(80) DEFAULT NULL,
     `ExchangeRateType`        varchar(4) DEFAULT NULL,
     `DocumentReferenceID`     varchar(16) DEFAULT NULL,
     `SoldToParty`             varchar(10) DEFAULT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE `sap-billing-document-header-data`
     `AccountingTransferStatus` varchar(1) DEFAULT NULL,
     `InvoiceListStatus`       varchar(1) DEFAULT NULL,
     `BillingDocumentListType` varchar(4) DEFAULT NULL,
-    `BillingDocumentListDate` date DEFAULT NULL,
+    `BillingDocumentListDate` varchar(80) DEFAULT NULL,
     PRIMARY KEY (`BillingDocument`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
