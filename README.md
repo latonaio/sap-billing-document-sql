@@ -14,12 +14,11 @@ https://api.sap.com/api/OP_API_BILLING_DOCUMENT_SRV_0001/overview
 sap-billing-document-sql には、sqlの設定ファイルとして、以下のファイルが含まれています。  
 
 * sap-billing-document-sql-header-data.sql（SAP 請求伝票 - ヘッダデータ）
+* sap-billing-document-sql-header-partner-data.sql（SAP 請求伝票 - ヘッダ取引先データ）
 * sap-billing-document-sql-item-data.sql（SAP 請求伝票 - 明細データ）
-* sap-billing-document-sql-partner-data.sql（SAP 請求伝票 - パートナデータ）
+* sap-billing-document-sql-item-partner-data.sql（SAP 請求伝票 - 明細取引先データ）
+* sap-billing-document-sql-item-pricing-element-data.sql（SAP 請求伝票 - 明細価格条件データ）
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 
 MySQLのセットアップ / Kubernetesの設定 / 具体的なSQLテーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。
-
-
-
